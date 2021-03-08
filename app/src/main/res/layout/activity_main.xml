@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/viewMenu"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/brown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_arrow_back"
+        android:tint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cappuccino"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMenu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageClock"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_clock"
+        android:tint="@color/brown"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageFavorite"
+        app:layout_constraintTop_toBottomOf="@id/viewMenu" />
+
+    <ImageView
+        android:id="@+id/imageFavorite"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        android:tint="@color/brown"
+        app:layout_constraintLeft_toRightOf="@+id/imageClock"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMenu" />
+
+    <TextView
+        android:id="@+id/textPreparacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 minutos"
+        app:layout_constraintLeft_toLeftOf="@id/imageClock"
+        app:layout_constraintRight_toRightOf="@id/imageClock"
+        app:layout_constraintTop_toBottomOf="@+id/imageClock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="54214"
+        app:layout_constraintLeft_toLeftOf="@id/imageFavorite"
+        app:layout_constraintRight_toRightOf="@id/imageFavorite"
+        app:layout_constraintTop_toBottomOf="@id/imageFavorite"
+
+        />
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/brown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPreparacao" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/description"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeparator" />
+
+    <TextView
+        android:id="@+id/textIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Ingredientes"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescription" />
+
+    <ImageView
+        android:id="@+id/imageIngredient1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_chevron_right_24"
+        android:tint="@color/brown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIngredientes" />
+
+    <TextView
+        android:id="@+id/textIngredientes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dose"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/imageIngredient1"
+        app:layout_constraintTop_toTopOf="@+id/imageIngredient1" />
+
+    <ImageView
+        android:id="@+id/imageIngredient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_chevron_right_24"
+        android:tint="@color/brown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIngredient1" />
+
+    <TextView
+        android:id="@+id/textIngredientes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/imageIngredient2"
+        app:layout_constraintTop_toTopOf="@+id/imageIngredient2" />
+
+    <ImageView
+        android:id="@+id/imageIngredient3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_chevron_right_24"
+        android:tint="@color/brown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIngredient2" />
+
+    <TextView
+        android:id="@+id/textIngredientes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colher"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/imageIngredient3"
+        app:layout_constraintTop_toTopOf="@+id/imageIngredient3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

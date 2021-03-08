@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Coffee</string>
+    <string name="description">Uma simples e perfeitamente extraída dose de espresso misturado com leite fresco e chocolate fazem esta bebida deliciosa</string>
+    <string name="leite">100ml leite</string>
+    <string name="dose">1 dose espresso</string>
+    <string name="colher">1 colher de chocolate em pó</string>
+</resources>
